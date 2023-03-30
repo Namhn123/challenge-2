@@ -1,0 +1,111 @@
+/* Create CSS variables at the root of the document to be used throughout the style sheet */
+:root {
+  background-color: lightblue;
+}
+
+body {
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  margin:0;
+}
+
+section {
+  width: 100%
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+header {
+  text-align: center;
+  background: darkblue;
+  color: white;
+}
+
+nav {
+  display: flex;
+  background-color: cyan;
+  justify-content: end;
+}
+
+nav a {
+  color: darkblue;
+  padding: 14px 20px;
+  text-decoration: none;
+  text-align: center;
+}
+
+nav a:hover {
+  background-color: darkblue;
+  color: white;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  padding:0 20px
+}
+
+#aboutMe {
+  justify-content: center;
+  width:100%;
+}
+
+#aboutMe content{
+  display:flex;
+}
+
+#aboutMe img {
+  padding: 0 20px 0 0;
+}
+
+#works {
+  width:100%;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: space-evenly;
+}
+
+#works h2 {
+  width:100%;
+  text-align:center;
+}
+
+.work {
+  margin-bottom: 10px;
+  text-align: center;
+  width:30%;
+  background-color: darkblue;
+  color:white;
+}
+
+.work img {
+  width: 100%;
+  min-width: 100px;
+}
+
+ul {
+  justify-content: center;
+}
+
+@media screen and (max-width:992px){
+  .work {
+    width:40%
+  }
+}
+
+@media screen and (max-width:768px){
+  .work {
+    width:90%
+  }
+}
